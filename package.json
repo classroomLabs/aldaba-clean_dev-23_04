@@ -1,20 +1,20 @@
 {
-  "name": "clean-dev",
+  "name": "aldaba-clean_dev-23_04",
   "version": "2023.5.0",
-  "description": "Clean Code course material (demo and docs)",
+  "description": "Clean Code course material (demo and docs) for ALDABA",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@hotmail.com",
     "url": "https://albertobasalo.dev"
   },
-  "homepage": "https://github.com/AlbertoBasalo/clean-dev#readme",
+  "homepage": "https://github.com/classroomLabs/aldaba-clean_dev-23_04#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertoBasalo/clean-dev.git"
+    "url": "git+https://github.com/classroomLabs/aldaba-clean_dev-23_04.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlbertoBasalo/clean-dev/issues"
+    "url": "https://github.com/classroomLabs/aldaba-clean_dev-23_04/issues"
   },
   "scripts": {
     "prestart": "npm run build",

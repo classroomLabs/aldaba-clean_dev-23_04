@@ -1,11 +1,11 @@
-# Clean Code course material
+# Clean Code course material fro ALDABA
 
-Demo project and documentation for the Clean Code course.
+Demo project and documentation for the ALDABA Clean Code course.
 
 > Clone, fork or use as a template repository for practicing.
 
 ```bash
-git clone https://github.com/AlbertoBasalo/clean-code your-project
+git clone https://github.com/classroomLabs/aldaba-clean_dev-23_04.git your-project
 cd your-project
 npm install
 ```
