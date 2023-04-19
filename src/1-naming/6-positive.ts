@@ -17,6 +17,6 @@ if (hasValue) {
 }
 // Alternative for early returns
 if (!hasValue) {
-  return;
+  console.log("returning...");
 }
 console.log("do something");
