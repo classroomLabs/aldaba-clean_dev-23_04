@@ -14,15 +14,15 @@ function saveBooking(paymentData: object) {}
 function sendConfirmationEmail(confirmationMessage: object) {}
 
 // ❌
-function sendMessage(
-  senderName: string,
-  senderAddress: string,
-  recipientAddress: string,
-  subject: string,
-  body: string
-) {
-  // 🤢 multiple similar parameters are error-prone
-}
+// function sendMessage(
+//   senderName: string,
+//   senderAddress: string,
+//   recipientAddress: string,
+//   subject: string,
+//   body: string
+// ) {
+//   // 🤢 multiple similar parameters are error-prone
+// }
 // ✅
 type Message = {
   senderName: string;
