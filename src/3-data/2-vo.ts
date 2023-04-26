@@ -8,6 +8,28 @@ class ClientVO {
     }
   }
 }
+const aldabaVO = new ClientVO("Aldaba", "Spain", "Madrid");
+console.log(aldabaVO.name); // Aldaba
+// aldabaVO.name = "Aldaba Software"; // Error: Cannot assign to 'name' because it is a read-only property.
+
+interface ClientDTO {
+  name: string;
+  country: string;
+  city: string;
+}
+
+const aldaba = {
+  name: "Aldaba",
+  country: "Spain",
+  city: "Madrid",
+};
+class ClientHandler {
+  validate(client: ClientDTO) {
+    if (client.name.length < 3) {
+      throw new Error("Name must be at least 3 characters");
+    }
+  }
+}
 
 class PaymentVO {
   // 😏 mutable, but with validation
@@ -37,7 +59,7 @@ class PaymentVO {
   }
 }
 
-// ✅ add functionality to data (contruction, representation...)
+// ✅ add functionality to data (construction, representation...)
 
 class CardVO {
   public readonly number: string;

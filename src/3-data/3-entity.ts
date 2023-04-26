@@ -6,19 +6,36 @@ export class Client {
 }
 
 export class Card {
-  constructor(public readonly cardData: CardVO) {}
-
+  public readonly cardData: CardVO;
+  constructor(cardData: CardVO) {
+    this.cardData = cardData;
+  }
   isExpired() {
     // 😏 impure logic dependent on context? encapsulated with it
     return this.cardData.getExpirationDate() < new Date();
   }
-
   checkCardLimit(amount: number) {
     // 😏 impure and potentially complex logic? entity is your home
     console.log(`get card limit online...`);
     const limit = 1000;
     if (amount > limit) {
       throw new Error(`Card ${this.cardData.number} limit exceeded`);
+    }
+    return true;
+  }
+}
+export class CardService {
+  paymentLimit = 1000;
+  constructor() {}
+  isExpired(cardData: CardVO) {
+    // 😏 impure logic dependent on context? encapsulated with it
+    return cardData.getExpirationDate() < new Date();
+  }
+  pay(card: CardVO, amount: number) {
+    // 😏 impure and potentially complex logic? entity is your home
+    console.log(`get card limit online...`);
+    if (amount > this.paymentLimit) {
+      throw new Error(`Card ${card.number} limit exceeded`);
     }
     return true;
   }
