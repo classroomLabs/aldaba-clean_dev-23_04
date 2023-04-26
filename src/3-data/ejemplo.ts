@@ -36,7 +36,7 @@ export class ClientEntityComposition {
 
 export class CardEntityComposition {
   card: CardDTO;
-  client: ClientEntityComposition;
+  client!: ClientEntityComposition;
   constructor(card: CardDTO) {
     this.card = card;
   }
