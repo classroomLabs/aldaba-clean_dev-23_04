@@ -20,8 +20,8 @@ Write a library in any language that implements the following use cases with the
 
 ## Test and consumer
 
-- Write tests for the library
 - Write a small application that uses the library
+- Write tests for the library (optional)
 
 ## Use Cases
 
