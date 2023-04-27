@@ -50,9 +50,13 @@ Default values while creating an Activity:
 ### 2- Update the State of an Activity
 
 If it is in the "draft" state can be changed to 'published' or 'canceled'
+
 If it is in the "published" state can be changed to 'confirmed' or 'canceled'
+
 If it is in the "confirmed" state can be changed to 'finished'
+
 If it is in the "canceled" state can not be changed.
+
 If it is in the "finished" state can not be changed.
 
 ### 3- Book an Activity
@@ -60,6 +64,7 @@ If it is in the "finished" state can not be changed.
 #### Restrictions
 
 If the Activity is in the "published" or "confirmed" state and has enough capacity, then the activity can be booked.
+
 If bookings reach the required quorum, then the activity state is changed to "confirmed"
 
 #### Data needed for booking an activity:
