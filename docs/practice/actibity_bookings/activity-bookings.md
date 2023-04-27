@@ -1,22 +1,25 @@
-# Activity Bookings system
+# Activity Bookings system.
 
-Write a library in any language that implements the following use cases with this restictions.
+Write a library in any language that implements the following use cases with these restrictions.
 
 ## Technical Specifications
 
 - The library should be able to be used in a simple application that executes the use cases.
-- All data should be stored in memory, no database is needed.
+- All data should be stored in memory; no database is needed.
 - The results of every use case should be printed to the console.
 
 ## Style Guide
 
 - No more than 1 parameter per method
-- No nesting more than 1 level deep structures (if, for, while, etc)
+- No nesting of more than 1 level deep structures (if, for, while, etc.) inside methods
 - Methods should be no longer than 9 lines
 - Classes should be no longer than 99 lines
 - No switch statements
 - Use verbs for method names
 - Use complete words for variables and methods
+
+## Test and consumer
+
 - Write tests for the library
 - Write a small application that uses the library
 
@@ -29,10 +32,10 @@ Data needed for creating an Activity:
 - A Title
 - A Location
 - A Date in the future
-- A non negative Price
+- A non-negative Price
 - A minimum Quorum
 - A maximum Capacity
-- An State (draft, published, confirmed, cancelled, finished)
+- An State (draft, published, confirmed, canceled, finished)
 
 Default values while creating an Activity:
 
@@ -46,10 +49,10 @@ Default values while creating an Activity:
 
 ### 2- Update the State of an Activity
 
-If it is in the "draft" state can be changed to 'published' or 'cancelled'.
-If it is in the "published" state can be changed to 'confirmed' or 'cancelled'.
-If it is in the "confirmed" state can be changed to 'finished'.
-If it is in the "cancelled" state can not be changed.
+If it is in the "draft" state can be changed to 'published' or 'canceled'
+If it is in the "published" state can be changed to 'confirmed' or 'canceled'
+If it is in the "confirmed" state can be changed to 'finished'
+If it is in the "canceled" state can not be changed.
 If it is in the "finished" state can not be changed.
 
 ### 3- Book an Activity
@@ -57,7 +60,7 @@ If it is in the "finished" state can not be changed.
 #### Restrictions
 
 If the Activity is in the "published" or "confirmed" state and has enough capacity, then the activity can be booked.
-If bookings reach the required quorum, then the activity state is changed to "confirmed".
+If bookings reach the required quorum, then the activity state is changed to "confirmed"
 
 #### Data needed for booking an activity:
 
